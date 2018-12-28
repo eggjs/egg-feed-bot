@@ -39,6 +39,11 @@
     * [[`93f8009`](https://github.com/eggjs/egg-mock/commit/93f8009c2f4c7d7f24b361f4713e035a2f993134)] - feat: cluster mock support result (#92) (TZ <<atian25@qq.com>>)
     * [[`be3d146`](https://github.com/eggjs/egg-mock/commit/be3d1466bf438a379b85429c40c510d6be7ecc26)] - feat: bootstrap support run on jest env (#93) (fengmk2 <<fengmk2@gmail.com>>)
 
+0.0.7 / 2016-10-25
+==================
+
+  * feat: should close agent when app close (#12)
+
 3.20.1 / 2018-09-17
 ==================
 
@@ -47,11 +52,6 @@
 
 **others**
   * [[`a64db33`](http://github.com/eggjs/egg-mock/commit/a64db33d2ee68a76f7c41303e79e37099f33b373)] - deps: add egg-logger dependency (#88) (fengmk2 <<fengmk2@gmail.com>>)
-
-0.0.7 / 2016-10-25
-==================
-
-  * feat: should close agent when app close (#12)
 
 0.0.6 / 2016-10-24
 ==================
