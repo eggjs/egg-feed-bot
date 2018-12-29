@@ -30,8 +30,8 @@
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
     "ci-check": "npm run lint && egg-bin pkgfiles --check && npm run cov",
-    "ci": "npm run ci-check && npm run-job",
-    "run-job": "node bin/cron.js",
+    "ci": "npm run ci-check && npm run cron-job",
+    "cron-job": "node bin/cron.js",
     "pkgfiles": "egg-bin pkgfiles"
   },
   "ci": {
