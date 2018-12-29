@@ -1,0 +1,55 @@
+{
+  "name": "egg-feed-bot",
+  "version": "1.0.0",
+  "description": "a bot to collect egg feeds",
+  "main": "./lib/bot",
+  "dependencies": {
+    "@octokit/rest": "^16.3.0",
+    "common-bin-plus": "^0.0.1",
+    "dayjs": "^1.7.8",
+    "extend2": "^1.0.0"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "coffee": "^5.2.1",
+    "egg-bin": "^4.9.0",
+    "egg-ci": "^1.11.0",
+    "eslint": "^5.11.1",
+    "eslint-config-egg": "^7.1.0",
+    "mz": "^2.7.0",
+    "mz-modules": "^2.1.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "autod": "autod",
+    "lint": "eslint .",
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "ci-check": "npm run lint && egg-bin pkgfiles --check && npm run cov",
+    "ci": "npm run ci-check && npm run cron-job",
+    "cron-job": "node bin/cron.js",
+    "pkgfiles": "egg-bin pkgfiles"
+  },
+  "ci": {
+    "version": "8",
+    "type": "travis"
+  },
+  "eslintIgnore": [
+    "coverage",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:eggjs/egg-feed-bot.git"
+  },
+  "files": [
+    "lib",
+    "index.js"
+  ],
+  "author": "TZ <atian25@qq.com>",
+  "license": "MIT"
+}
