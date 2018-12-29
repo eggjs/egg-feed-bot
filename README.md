@@ -18,3 +18,7 @@ a bot to collect egg feeds
 travis-ci monthly cron job, will collect eggjs changelog then write to https://github.com/eggjs/egg-feed-bot/issues
 
 `Watch` this repository then you could get a changelog feed notify.
+
+## RFC
+
+See details at https://www.yuque.com/atian25/blog/ye11bg or just read the source.
