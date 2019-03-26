@@ -21,18 +21,18 @@ describe('test/bot.test.js', () => {
     assert(list.length === 6);
     assert(list[0].version === '2.14.1');
     assert(list[0].date === '2018-11-24');
-    assert(list[0].content.join('\n').includes('remove timeout log msg'));
+    assert(list[0].content.includes('remove timeout log msg'));
 
     assert(list[1].version === '2.14.0');
     assert(list[1].date === '2018-11-17');
 
     assert(list[4].version === '3.20.1');
     assert(list[4].date === '2018-09-17');
-    assert(list[4].content.join('\n').includes('others'));
+    assert(list[4].content.includes('others'));
 
     assert(list[5].version === '0.0.6');
     assert(list[5].date === '2016-10-24');
-    assert(list[5].content.join('\n').includes('docs:update readme (#9)'));
+    assert(list[5].content.includes('docs:update readme (#9)'));
   });
 
   it('should filter', () => {

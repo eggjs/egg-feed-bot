@@ -7,7 +7,8 @@
     "@octokit/rest": "^16.3.0",
     "common-bin-plus": "^0.0.1",
     "dayjs": "^1.7.8",
-    "extend2": "^1.0.0"
+    "extend2": "^1.0.0",
+    "git-changelog-parser": "^1.0.0"
   },
   "devDependencies": {
     "autod": "^3.0.1",
